@@ -1,4 +1,5 @@
 import { Popover } from "@headlessui/react";
+import { Link } from "react-scroll";
 
 export default function NavBar() {
   return (
@@ -11,24 +12,33 @@ export default function NavBar() {
             <img className="h-8 w-auto sm:h-10" src="/logo.png" alt="Logo" />
           </a>
         </div>
-        <a
-          href="#home-section"
+        <Link
+          to="home-section"
+          spy={true}
+          smooth={true}
+          duration={500}
           className="text-base font-medium text-gray-500 hover:text-gray-900"
         >
           Home
-        </a>
-        <a
-          href="#about-section"
+        </Link>
+        <Link
+          to="about-section"
+          spy={true}
+          smooth={true}
+          duration={500}
           className="text-base font-medium text-gray-500 hover:text-gray-900"
         >
           About
-        </a>
-        <a
-          href="#career-section"
+        </Link>
+        <Link
+          to="career-section"
+          spy={true}
+          smooth={true}
+          duration={500}
           className="text-base font-medium text-gray-500 hover:text-gray-900"
         >
           Career
-        </a>
+        </Link>
         {/* <a
           href="#"
           className="text-base font-medium text-gray-500 hover:text-gray-900"
